@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "239728150133",
+    "project_id": "lesson7-5310c",
+    "storage_bucket": "lesson7-5310c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239728150133:android:f71dbe3cca1119f4c01a3c",
+        "android_client_info": {
+          "package_name": "ru.mirea.yagoda.firebaseauth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "239728150133-0p6r50jtqpvidrs6t69opvlqgbckbpid.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQGDaWxbK6ACy8oGUWn60B5KiyYcYRUdo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "239728150133-0p6r50jtqpvidrs6t69opvlqgbckbpid.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
