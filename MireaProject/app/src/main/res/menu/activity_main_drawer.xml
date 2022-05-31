@@ -24,5 +24,10 @@
             android:id="@+id/webFragment"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Браузер" />
+
+        <item
+            android:id="@+id/audioFragment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Аудио" />
     </group>
 </menu>

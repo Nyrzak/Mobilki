@@ -31,4 +31,9 @@
         android:id="@+id/webFragment"
         android:name="ru.mirea.yagoda.myapplication.ui.Web.WebFragment"
         android:label="WebFragment" />
+    <fragment
+        android:id="@+id/audioFragment"
+        android:name="ru.mirea.yagoda.myapplication.ui.Audio.AudioFragment"
+        android:label="fragment_audio"
+        tools:layout="@layout/fragment_audio" />
 </navigation>
