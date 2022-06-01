@@ -29,5 +29,25 @@
             android:id="@+id/audioFragment"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Аудио" />
+
+        <item
+            android:id="@+id/fragmentPhoto"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Камера" />
+
+        <item
+            android:id="@+id/datchikFragment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Датчик" />
+
+        <item
+            android:id="@+id/fragmentMusic"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Аудио Запись" />
+
+        <item
+            android:id="@+id/fragmentPermissions"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Разрешения" />
     </group>
 </menu>

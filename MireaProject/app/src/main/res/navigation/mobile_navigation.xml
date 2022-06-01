@@ -36,4 +36,24 @@
         android:name="ru.mirea.yagoda.myapplication.ui.Audio.AudioFragment"
         android:label="fragment_audio"
         tools:layout="@layout/fragment_audio" />
+    <fragment
+        android:id="@+id/fragmentPhoto"
+        android:name="ru.mirea.yagoda.myapplication.ui.MakePhoto.FragmentPhoto"
+        android:label="fragment_makephoto"
+        tools:layout="@layout/fragment_makephoto" />
+    <fragment
+        android:id="@+id/datchikFragment"
+        android:name="ru.mirea.yagoda.myapplication.ui.Datchik.DatchikFragment"
+        android:label="fragment_datchik"
+        tools:layout="@layout/fragment_datchik" />
+    <fragment
+        android:id="@+id/fragmentMusic"
+        android:name="ru.mirea.yagoda.myapplication.ui.Music.FragmentMusic"
+        android:label="fragment_music"
+        tools:layout="@layout/fragment_music" />
+    <fragment
+        android:id="@+id/fragmentPermissions"
+        android:name="ru.mirea.yagoda.myapplication.ui.Permission.FragmentPermissions"
+        android:label="fragment_permission"
+        tools:layout="@layout/fragment_permission" />
 </navigation>
