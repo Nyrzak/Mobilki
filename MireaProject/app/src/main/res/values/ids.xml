@@ -8,4 +8,5 @@
     <item name="textView2" type="id" />
     <item name="textViewPitch" type="id" />
     <item name="textViewAzimuth" type="id" />
+    <item name="action_nav_settings_to_settingsFragment" type="id" />
 </resources>

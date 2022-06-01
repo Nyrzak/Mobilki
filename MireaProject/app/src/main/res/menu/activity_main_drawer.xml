@@ -49,5 +49,10 @@
             android:id="@+id/fragmentPermissions"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Разрешения" />
+
+        <item
+            android:id="@+id/homeSettingsFragment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Настройки" />
     </group>
 </menu>

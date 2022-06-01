@@ -56,4 +56,9 @@
         android:name="ru.mirea.yagoda.myapplication.ui.Permission.FragmentPermissions"
         android:label="fragment_permission"
         tools:layout="@layout/fragment_permission" />
+    <fragment
+        android:id="@+id/homeSettingsFragment"
+        android:name="ru.mirea.yagoda.myapplication.ui.Settings.HomeSettingsFragment"
+        android:label="fragment_home_settings"
+        tools:layout="@layout/fragment_home_settings" />
 </navigation>
