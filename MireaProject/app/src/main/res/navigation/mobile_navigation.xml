@@ -61,4 +61,9 @@
         android:name="ru.mirea.yagoda.myapplication.ui.Settings.HomeSettingsFragment"
         android:label="fragment_home_settings"
         tools:layout="@layout/fragment_home_settings" />
+    <fragment
+        android:id="@+id/storiesFragment"
+        android:name="ru.mirea.yagoda.myapplication.ui.Stories.StoriesFragment"
+        android:label="fragment_stories"
+        tools:layout="@layout/fragment_stories" />
 </navigation>

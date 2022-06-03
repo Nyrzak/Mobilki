@@ -54,5 +54,10 @@
             android:id="@+id/homeSettingsFragment"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Настройки" />
+
+        <item
+            android:id="@+id/storiesFragment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Истории" />
     </group>
 </menu>
