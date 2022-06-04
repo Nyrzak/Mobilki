@@ -66,4 +66,9 @@
         android:name="ru.mirea.yagoda.myapplication.ui.Stories.StoriesFragment"
         android:label="fragment_stories"
         tools:layout="@layout/fragment_stories" />
+    <fragment
+        android:id="@+id/retrofitFragment"
+        android:name="ru.mirea.yagoda.myapplication.ui.Retrofit.RetrofitFragment"
+        android:label="fragment_retrofit"
+        tools:layout="@layout/fragment_retrofit" />
 </navigation>

@@ -19,4 +19,16 @@
     <string name="sync_title" />
     <string name="sync_header" />
     <string name="messages_header" />
+
+    <string name="hint_user_id">User ID</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_account">Create Account</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="verify_email">Verify Email</string>
+    <string name="signed_in">Signed In</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="emailpassword_title_text">Email and Password</string>
+    <string name="emailpassword_status_fmt">Email User: %1$s</string>
+    <string name="auth_failed">Authentication failed</string>
+    <string name="activity_login">LoginActivity</string>
 </resources>

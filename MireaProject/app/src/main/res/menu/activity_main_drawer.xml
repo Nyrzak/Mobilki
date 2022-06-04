@@ -59,5 +59,10 @@
             android:id="@+id/storiesFragment"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Истории" />
+
+        <item
+            android:id="@+id/retrofitFragment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Ретрофит" />
     </group>
 </menu>

@@ -6,15 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.Music.FragmentMusic">
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="471dp"
-        android:layout_height="608dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/textView4"
         android:layout_width="121dp"
@@ -75,10 +66,11 @@
         android:id="@+id/button_stop_audio"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_marginStart="304dp"
         android:layout_marginTop="368dp"
         android:onClick="buttonStopRecord"
         android:text="Stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

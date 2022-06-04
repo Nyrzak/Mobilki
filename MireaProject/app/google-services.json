@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "20345333439",
+    "project_id": "mireaproject-a0b4a",
+    "storage_bucket": "mireaproject-a0b4a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20345333439:android:6d225b8d023d71d251080a",
+        "android_client_info": {
+          "package_name": "ru.mirea.yagoda.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20345333439-7nhhebnabmveb0pj4e360317abt8jnqu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0gj4rdGKUYlsL8Hb_IN1oJKvNkYiYEiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20345333439-7nhhebnabmveb0pj4e360317abt8jnqu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

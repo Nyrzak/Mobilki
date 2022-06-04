@@ -7,15 +7,6 @@
     tools:context=".ui.MakePhoto.FragmentPhoto">
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="471dp"
-        android:layout_height="608dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
         android:id="@+id/imageView"
         android:layout_width="322dp"
         android:layout_height="341dp"
