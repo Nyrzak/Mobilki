@@ -71,4 +71,9 @@
         android:name="ru.mirea.yagoda.myapplication.ui.Retrofit.RetrofitFragment"
         android:label="fragment_retrofit"
         tools:layout="@layout/fragment_retrofit" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="ru.mirea.yagoda.myapplication.ui.maps.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
 </navigation>

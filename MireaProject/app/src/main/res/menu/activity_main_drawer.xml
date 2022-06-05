@@ -64,5 +64,10 @@
             android:id="@+id/retrofitFragment"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Ретрофит" />
+
+        <item
+            android:id="@+id/mapsFragment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Карта" />
     </group>
 </menu>
