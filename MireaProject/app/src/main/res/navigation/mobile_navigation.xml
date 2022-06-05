@@ -76,4 +76,9 @@
         android:name="ru.mirea.yagoda.myapplication.ui.maps.MapsFragment"
         android:label="fragment_maps"
         tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/dataBaseFragment"
+        android:name="ru.mirea.yagoda.myapplication.ui.DataBase.DataBaseFragment"
+        android:label="fragment_database"
+        tools:layout="@layout/fragment_database" />
 </navigation>

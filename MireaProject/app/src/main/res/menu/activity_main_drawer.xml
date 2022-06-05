@@ -69,5 +69,10 @@
             android:id="@+id/mapsFragment"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Карта" />
+
+        <item
+            android:id="@+id/dataBaseFragment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Данные" />
     </group>
 </menu>
