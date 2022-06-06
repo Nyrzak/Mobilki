@@ -59,7 +59,7 @@ public class CalcFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if(text1 != null && text2 != null)
-                resultText.setText(Integer.toString(Integer.parseInt(text1) + Integer.parseInt(text2)));
+                resultText.setText(Double.toString(Double.parseDouble(text1) + Double.parseDouble(text2)));
             }
         });
         ((Button)v.findViewById(R.id.Subtraction)).setOnClickListener(new View.OnClickListener()
@@ -67,7 +67,7 @@ public class CalcFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if(text1 != null && text2 != null)
-                resultText.setText(Integer.toString(Integer.parseInt(text1) - Integer.parseInt(text2)));
+                resultText.setText(Double.toString(Double.parseDouble(text1) - Double.parseDouble(text2)));
             }
         });
         ((Button)v.findViewById(R.id.Div)).setOnClickListener(new View.OnClickListener()
@@ -76,13 +76,13 @@ public class CalcFragment extends Fragment {
             public void onClick(View v) {
                 if(text1 != null && text2 != null)
                 {
-                    if(Integer.parseInt(text2) == 0)
+                    if(Double.parseDouble(text2) == 0)
                     {
                         resultText.setText("Деление на ноль...");
                     }
                     else
                     {
-                            resultText.setText(Integer.toString(Integer.parseInt(text1) / Integer.parseInt(text2)));
+                            resultText.setText(Double.toString(Double.parseDouble(text1) / Double.parseDouble(text2)));
                     }
                 }
             }
@@ -92,7 +92,7 @@ public class CalcFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if(text1 != null && text2 != null)
-                resultText.setText(Integer.toString(Integer.parseInt(text1) * Integer.parseInt(text2)));
+                resultText.setText(Double.toString(Double.parseDouble(text1) * Double.parseDouble(text2)));
             }
         });
 

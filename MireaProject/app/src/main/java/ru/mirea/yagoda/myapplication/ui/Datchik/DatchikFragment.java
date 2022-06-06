@@ -51,7 +51,7 @@ public class DatchikFragment extends Fragment implements SensorEventListener{
         sensorManager = (SensorManager) this.getActivity().getSystemService(Context.SENSOR_SERVICE);
         accelerometerSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         pressureSensor =  sensorManager.getDefaultSensor(Sensor.TYPE_PRESSURE);
-        gravitySensor =  sensorManager.getDefaultSensor(Sensor.TYPE_GRAVITY);
+        gravitySensor =  sensorManager.getDefaultSensor(Sensor.TYPE_GAME_ROTATION_VECTOR);
     }
 
     @Override
@@ -98,9 +98,9 @@ public class DatchikFragment extends Fragment implements SensorEventListener{
             float valuePressure = event.values[0];
             pressureTextView.setText("Pressure: "+valuePressure);
         }
-        if (event.sensor.getType() == Sensor.TYPE_GRAVITY){
+        if (event.sensor.getType() == Sensor.TYPE_GAME_ROTATION_VECTOR){
             float gravity = event.values[0];
-            gravityTextView.setText("Gravity: "+ gravity);
+            gravityTextView.setText("Game Rotation vector: "+ gravity);
         }
     }
     @Override

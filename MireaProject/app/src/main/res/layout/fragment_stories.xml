@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
 
             app:fab_colorDisabled="@color/white"
-            app:fab_colorNormal="@color/black"
+            app:fab_colorNormal="@color/purple_200"
             app:fab_size="normal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

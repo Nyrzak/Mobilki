@@ -45,7 +45,7 @@ public class MapsFragment extends Fragment {
                 Task<Location> locationResult = LocationServices.getFusedLocationProviderClient(getActivity())
                         .getLastLocation();
             }
-            mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+            mMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
             mMap.setMyLocationEnabled(true);
             mMap.getUiSettings().setZoomControlsEnabled(true);
             mMap.setTrafficEnabled(true);
