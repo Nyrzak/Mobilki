@@ -28,6 +28,7 @@ public class AuthActivity extends AppCompatActivity implements View.OnClickListe
     private EditText mPasswordField;
 
     private Button enterButton;
+    private Button outButton;
     private String gmail;
 
     private FirebaseAuth mAuth;
@@ -38,10 +39,12 @@ public class AuthActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_authorization);
 
         enterButton = findViewById(R.id.enterButton);
+        outButton = findViewById(R.id.signOutButton);
         mStatusTextView = findViewById(R.id.status);
         mDetailTextView = findViewById(R.id.detail);
         mEmailField = findViewById(R.id.fieldEmail);
         mPasswordField = findViewById(R.id.fieldPassword);
+        findViewById(R.id.signOutButton).setOnClickListener(this);
         findViewById(R.id.emailSignInButton).setOnClickListener(this);
         findViewById(R.id.emailCreateAccountButton).setOnClickListener(this);
         mAuth = FirebaseAuth.getInstance();
@@ -83,6 +86,7 @@ public class AuthActivity extends AppCompatActivity implements View.OnClickListe
             findViewById(R.id.emailPasswordButtons).setVisibility(View.VISIBLE);
             findViewById(R.id.emailPasswordFields).setVisibility(View.VISIBLE);
 
+            outButton.setVisibility(View.GONE);
             enterButton.setVisibility(View.GONE);
         }
     }
@@ -155,15 +159,19 @@ public class AuthActivity extends AppCompatActivity implements View.OnClickListe
                         mStatusTextView.setText(R.string.auth_failed);
                     }
                 });
-        // [END sign_in_with_email]
     }
 
-
+    private void signOut() {
+        mAuth.signOut();
+        updateUI(null);
+    }
     public void onClick(View v) {
         int i = v.getId();
         if (i == R.id.emailCreateAccountButton) {
             createAccount(mEmailField.getText().toString(), mPasswordField.getText().toString());
         }
+        else if (i == R.id.signOutButton) {
+            signOut();}
         else if (i == R.id.emailSignInButton) {
             signIn(mEmailField.getText().toString(), mPasswordField.getText().toString());
         }

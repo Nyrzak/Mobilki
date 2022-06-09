@@ -33,14 +33,18 @@ public class StoriesFragment extends Fragment {
         rv = v.findViewById(R.id.rv);
         List<String> name = new ArrayList<>();
 
-        editText.setOnKeyListener((v12, keyCode, event) -> {
-            if(event.getAction() == KeyEvent.ACTION_DOWN &&
-                    (keyCode == KeyEvent.KEYCODE_ENTER))
+        editText.setOnKeyListener(new View.OnKeyListener()
+        {
+            public boolean onKey(View v, int keyCode, KeyEvent event)
             {
-                strCatName = editText.getText().toString();
-                return true;
+                if(event.getAction() == KeyEvent.ACTION_DOWN &&
+                        (keyCode == KeyEvent.KEYCODE_ENTER))
+                {
+                    strCatName = editText.getText().toString();
+                    return true;
+                }
+                return false;
             }
-            return false;
         });
         ((FloatingActionButton)v.findViewById(R.id.fab_action)).setOnClickListener(v1 -> {
 

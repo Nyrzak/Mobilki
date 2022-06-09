@@ -35,6 +35,9 @@ public class HomeFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        (view.findViewById(R.id.btnLogin)).setVisibility(View.GONE);
+
         loginButton = view.findViewById(R.id.btnLogin);
         loginButton.setOnClickListener(view1 -> {
             Intent intent = new Intent(view1.getContext(), AuthActivity.class);

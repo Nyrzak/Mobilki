@@ -35,6 +35,8 @@ public class DatchikFragment extends Fragment implements SensorEventListener{
     private Sensor accelerometerSensor;
     private Sensor pressureSensor;
     private Sensor gravitySensor;
+    private Sensor sensor;
+
 
     public DatchikFragment() {
     }
@@ -50,8 +52,9 @@ public class DatchikFragment extends Fragment implements SensorEventListener{
         super.onCreate(savedInstanceState);
         sensorManager = (SensorManager) this.getActivity().getSystemService(Context.SENSOR_SERVICE);
         accelerometerSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-        pressureSensor =  sensorManager.getDefaultSensor(Sensor.TYPE_PRESSURE);
+        pressureSensor =  sensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
         gravitySensor =  sensorManager.getDefaultSensor(Sensor.TYPE_GAME_ROTATION_VECTOR);
+
     }
 
     @Override
@@ -67,6 +70,7 @@ public class DatchikFragment extends Fragment implements SensorEventListener{
         rollTextView = getView().findViewById(R.id.textViewRoll);
         pressureTextView = getView().findViewById(R.id.textViewPressure);
         gravityTextView = getView().findViewById(R.id.gravityTextView);
+
     }
 
     @Override
@@ -94,9 +98,9 @@ public class DatchikFragment extends Fragment implements SensorEventListener{
             pitchTextView.setText("Pitch: " + valuePitch);
             rollTextView.setText("Roll: " + valueRoll);
         }
-        if (event.sensor.getType() == Sensor.TYPE_PRESSURE){
+        if (event.sensor.getType() == Sensor.TYPE_MAGNETIC_FIELD){
             float valuePressure = event.values[0];
-            pressureTextView.setText("Pressure: "+valuePressure);
+            pressureTextView.setText("Magnetic Field: "+valuePressure);
         }
         if (event.sensor.getType() == Sensor.TYPE_GAME_ROTATION_VECTOR){
             float gravity = event.values[0];

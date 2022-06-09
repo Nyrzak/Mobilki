@@ -8,10 +8,10 @@
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="109dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="704dp"
+        android:layout_width="55dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="716dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></Button>
 </androidx.constraintlayout.widget.ConstraintLayout>
